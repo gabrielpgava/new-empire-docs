@@ -1,12 +1,12 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+mestrej:
+  name: Mestre J / Gabriel P Gava
+  title: Server Admin and Dev
+  url: https://github.com/gabrielpgava
+  image_url: https://github.com/gabrielpgava.png
   page: true
   socials:
-    x: yangshunz
-    github: yangshun
+    instagram: gabrielpgava
+    github: gabrielpgava
 
 slorber:
   name: Sébastien Lorber

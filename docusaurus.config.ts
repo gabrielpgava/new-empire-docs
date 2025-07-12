@@ -82,7 +82,7 @@ const config: Config = {
           label: 'Documentação',
         },
 
-        //{to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         
         {   
           type: 'docsVersionDropdown',
