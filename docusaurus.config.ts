@@ -10,14 +10,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://new-empire-docs.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'newempire', // Usually your GitHub org/user name.
+  organizationName: 'gabrielpgava', // Usually your GitHub org/user name.
   projectName: 'new-empire-doc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -68,21 +68,28 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'New Empire Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'New Empire Logo',
         src: 'img/logo.svg',
       },
       items: [
+
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentação',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
+
+        //{to: '/blog', label: 'Blog', position: 'left'},
+        
+        {   
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+                {
+          href: 'https://github.com/gabrielpgava/new-empire-docs',
           label: 'GitHub',
           position: 'right',
         },
