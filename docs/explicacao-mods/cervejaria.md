@@ -37,9 +37,9 @@ A maioria dos tipos de bebida requer envelhecimento com barris. Porém, nem todo
 
 Para começar a envelhecer uma mistura/bebida, basta clicar em um barril que você fez (não o vanilla!) e colocar seus itens lá. Eles começarão a envelhecer automaticamente. Quando atingirem qualidade suficiente, você pode retirá-los.
 
-## Download:
+## LINKS:
 - Modrinth: https://modrinth.com/mod/brewery
-- Github Releases: https://github.com/Patbox/brewery/releases
+- Github: https://github.com/Patbox/brewery/releases
 
 ### Datapacks que adicionam novas bebidas que você pode querer conferir.
 - Cabbage Substances: https://modrinth.com/datapack/cabbage-substances
