@@ -16,7 +16,7 @@ Nosso objetivo é tornar sua experiência mais fácil e agradável, incentivando
 
 ---
 
-**Versão atual do servidor:** `Minecraft 1.21.8`  
+**Versão atual do servidor:** `Minecraft 1.21.10`  
 
 
 Para jogar, entre em nosso [Discord](#).
