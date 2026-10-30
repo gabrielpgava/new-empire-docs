@@ -42,6 +42,11 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+      disableSwitch: false,
+    },
     image: 'img/LogoNewEmpire.png',
     navbar: {
       title: 'New Empire Docs',

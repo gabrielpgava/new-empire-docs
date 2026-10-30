@@ -1,23 +1,111 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.home {
+  --empire-ink: #0d1824;
+  --empire-ink-deep: #0a131d;
+  --empire-surface: #162534;
+  --empire-surface-2: #1c2d3c;
+  --empire-gold: #f1c878;
+  --empire-muted: #adc0c7;
+  background: var(--empire-ink);
+  color: #f1f2ee;
+  overflow-x: clip;
 }
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.home :global(a) { text-decoration: none; }
+.hero { position: relative; isolation: isolate; display: flex; align-items: center; min-height: min(840px, 95vh); background: #121e2b; overflow: hidden; }
+.heroArt { position: absolute; inset: 0; z-index: -2; }
+.heroArt img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 56% 50%; }
+.heroArt::after { position: absolute; inset: 0; content: ''; background: linear-gradient(90deg, rgba(8,18,28,.98) 0%, rgba(8,18,28,.91) 29%, rgba(8,18,28,.55) 53%, rgba(8,18,28,.08) 85%), linear-gradient(0deg,#0d1824 0%,transparent 27%,transparent 78%,rgba(4,12,19,.27) 100%); }
+.heroInner { width: 100%; padding-top: 95px; padding-bottom: 94px; }
+.heroText { width: min(660px,100%); position: relative; }
+.kicker { display: inline-flex; gap: 10px; align-items: center; font-size: .74rem; color: var(--empire-gold); font-weight: 800; letter-spacing: .17em; }
+.kickerDot { width: 8px; height: 8px; background: #e7c476; box-shadow: 0 0 0 4px rgba(241,200,120,.14); }
+.hero h1 { color: #fff9ed; margin: 24px 0; font-size: clamp(2.8rem,5.6vw,5.25rem); line-height: 1.045; letter-spacing: -.04em; font-weight: 850; text-wrap: balance; }
+.hero h1 span { color: var(--empire-gold); }
+.heroText > p:not(.heroFinePrint) { max-width: 560px; color: #d7e0e1; font-size: clamp(1rem,1.4vw,1.15rem); line-height: 1.82; }
+.heroActions { display: flex; gap: 12px; margin-top: 30px; flex-wrap: wrap; align-items: stretch; }
+.primaryAction { color: #182331!important; background: var(--empire-gold)!important; border: 1px solid #f8d991!important; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 13px 25px!important; border-radius: 8px!important; box-shadow: 0 8px 0 rgba(0,0,0,.21); transition: transform .18s ease,box-shadow .18s ease,background .18s ease; }
+.primaryAction:hover { background: #ffdda0!important; transform: translateY(-3px); box-shadow: 0 11px 0 rgba(0,0,0,.18); }
+.secondaryAction { color: #f2f4f1!important; background: rgba(20,32,44,.65)!important; border: 1px solid rgba(242,239,219,.42)!important; font-weight: 700; padding: 13px 25px!important; border-radius: 8px!important; transition: background .18s ease; }
+.secondaryAction:hover { background: rgba(55,73,88,.78)!important; }
+.heroStats { margin-top: 54px; display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; border-top: 1px solid rgba(232,230,211,.19); padding-top: 22px; }
+.heroStats div { display: flex; flex-direction: column; gap: 3px; }
+.heroStats strong { font-size: clamp(1.45rem,2.2vw,2rem); letter-spacing: -.02em; line-height: 1.2; color: #fbf6e8; }
+.heroStats span { font-size: .81rem; color: #a8bec7; }
+.heroFinePrint { font-size: .72rem; color: #b2b7b5; margin: 18px 0 0; }
+.heroBottom { position: absolute; bottom: 0; left: 0; right: 0; height: 7px; display: flex; }
+.heroBottom span { flex: 1; background: #c6aa6e; }
+.heroBottom span:nth-child(even) { background: #537b71; }
+.section { padding: clamp(70px,8vw,116px) 0; }
+.sectionAlt { background: var(--empire-ink-deep); border-top: 1px solid rgba(255,255,255,.045); border-bottom: 1px solid rgba(255,255,255,.045); }
+.sectionHeading { margin-bottom: 38px; max-width: 760px; }
+.eyebrow { font-weight: 800; font-size: .74rem; color: var(--empire-gold); letter-spacing: .18em; }
+.sectionHeading h2, .featuredIntro h2, .closingPanel h2 { color: #f7f3e8; font-size: clamp(2rem,3.5vw,3.2rem); letter-spacing: -.035em; line-height: 1.16; margin: 16px 0; text-wrap: balance; }
+.sectionHeading p, .featuredIntro p, .closingPanel p { color: var(--empire-muted); max-width: 640px; line-height: 1.75; font-size: 1rem; }
+.trailGrid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; }
+.trailCard { background: #152432; border: 1px solid #304354; border-bottom: 3px solid #a78a5b; transition: transform .22s ease,border-color .22s ease; min-width: 0; }
+.trailCard:hover { transform: translateY(-6px); border-color: #8e9e99; }
+.trailImageLink { display: block; overflow: hidden; background: #263e44; }
+.trailImageLink img { display: block; width: 100%; height: auto; aspect-ratio: 11/7.7; object-fit: cover; transition: transform .35s ease; }
+.trailCard:hover img { transform: scale(1.035); }
+.trailBody { padding: clamp(22px,2.3vw,30px); }
+.trailTag { color: #c9ad77; letter-spacing: .15em; font-weight: 750; font-size: .67rem; }
+.trailBody h3 { color: #f8f0e0; margin: 14px 0 10px; font-size: clamp(1.2rem,1.7vw,1.52rem); line-height: 1.25; }
+.trailBody p { min-height: 93px; margin: 0 0 17px; line-height: 1.75; color: #b5c5c9; font-size: .95rem; }
+.trailLink { color: var(--empire-gold)!important; font-weight: 750; display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid #304352; }
+.trailLink span { font-size: 1.2rem; }
+.shortcutGrid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+.shortcut { min-width: 0; min-height: 114px; display: flex; align-items: center; gap: 16px; background: #172838; border: 1px solid #354654; padding: 21px 20px; color: #f7eee0!important; transition: background .18s ease,transform .18s ease; }
+.shortcut:hover { background: #203548; transform: translateY(-3px); }
+.shortcutIcon { width: 44px; height: 44px; flex: 0 0 44px; background: #284054; border: 1px solid #476376; color: var(--empire-gold); display: grid; place-items: center; font-size: 1.2rem; }
+.shortcutText { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 0; }
+.shortcutText strong { font-size: .97rem; line-height: 1.35; }
+.shortcutText small { color: #a6b8c2; line-height: 1.4; font-size: .8rem; }
+.shortcutArrow { font-size: 1.1rem; color: #d9b77b; align-self: flex-start; }
+.featuredLayout { display: grid; grid-template-columns: minmax(250px,.8fr) minmax(0,1.2fr); gap: clamp(30px,7vw,130px); align-items: center; }
+.featuredIntro p { margin-bottom: 25px; }
+.textAction { color: var(--empire-gold)!important; font-weight: 700; border-bottom: 1px solid var(--empire-gold); padding-bottom: 5px; }
+.featuredList { border-top: 1px solid #344957; }
+.featuredItem { color: #f2eee4!important; display: flex; align-items: center; gap: 18px; padding: 27px 6px; border-bottom: 1px solid #344957; transition: background .18s ease,padding .18s ease; }
+.featuredItem:hover { padding-left: 15px; background: #1b2d3a; }
+.featuredNumber { color: #d4b77f; font-size: .77rem; letter-spacing: .1em; font-weight: 850; }
+.featuredCopy { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.featuredCopy strong { font-size: 1.12rem; }
+.featuredCopy small { color: #aec0c7; font-size: .91rem; line-height: 1.4; }
+.closing { padding: 0 0 100px; }
+.closingPanel { text-align: center; padding: clamp(35px,6vw,78px); background: linear-gradient(135deg,#20374a 0%,#142432 62%,#253d3b 100%); border: 1px solid #607173; position: relative; overflow: hidden; }
+.closingPanel::before,.closingPanel::after { content: ''; position: absolute; width: 90px; height: 90px; border: 2px solid #8d9d7a; opacity: .45; pointer-events: none; }
+.closingPanel::before { top: -40px; left: -40px; transform: rotate(45deg); }
+.closingPanel::after { bottom: -40px; right: -40px; transform: rotate(45deg); }
+.closingPanel h2 { max-width: 780px; margin: 16px auto; }
+.closingPanel p { margin: 0 auto 26px; }
+@media (max-width: 996px) {
+  .hero { min-height: 680px; }
+  .heroArt img { object-position: 63% 50%; }
+  .heroArt::after { background: linear-gradient(90deg,rgba(8,18,28,.96),rgba(8,18,28,.68) 65%,rgba(8,18,28,.29)),linear-gradient(0deg,#0d1824,transparent 35%); }
+  .trailGrid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .trailCard:last-child { grid-column: 1/-1; }
+  .trailCard:last-child .trailImageLink img { max-height: 320px; object-fit: cover; }
+  .shortcutGrid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .featuredLayout { grid-template-columns: 1fr; }
 }
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 620px) {
+  .hero { min-height: 740px; align-items: flex-end; }
+  .heroInner { padding-top: 115px; padding-bottom: 63px; }
+  .heroArt img { object-position: 72% 50%; }
+  .heroArt::after { background: linear-gradient(0deg,rgba(8,18,28,.99) 2%,rgba(8,18,28,.83) 59%,rgba(8,18,28,.21) 100%); }
+  .hero h1 { font-size: clamp(2.4rem,10.5vw,3.5rem); }
+  .heroStats { gap: 7px; margin-top: 32px; }
+  .heroStats span { font-size: .71rem; }
+  .heroActions { flex-direction: column; align-items: stretch; }
+  .trailGrid,.shortcutGrid { grid-template-columns: 1fr; }
+  .trailCard:last-child { grid-column: auto; }
+  .trailCard:last-child .trailImageLink img { max-height: none; }
+  .trailBody p { min-height: 0; }
+  .section { padding: 65px 0; }
+  .closing { padding-bottom: 65px; }
+  .featuredItem { padding: 20px 4px; }
+  .shortcut { min-height: 98px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home *, .home *::before,.home *::after { transition: none!important; animation: none!important; }
 }
