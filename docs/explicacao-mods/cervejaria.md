@@ -1,47 +1,56 @@
-# Mod Cervejaria - Patbox's Brewery
+---
+sidebar_position: 6
+title: Cervejaria (Brewery)
+description: Como preparar e envelhecer bebidas com o Patbox's Brewery.
+---
 
-![Showcase](../../assets/cervejaria/cervejaria01.png)
+# 🍺 Cervejaria: Patbox's Brewery
 
-Brewery é um mod que permite criar bebidas alcoólicas e não alcoólicas usando caldeirões e barris. Além de algumas bebidas já inclusas, você pode adicionar qualquer quantidade de bebidas personalizadas com suas próprias receitas e funcionalidades usando datapacks (Solicitar ao admin caso queira fazer alguma adição)
+**Versão selecionada no modpack:** `brewery-0.17.1+26.3.jar`.
 
+![Exemplo da cervejaria](../../assets/cervejaria/cervejaria01.png)
 
-## Primeiros Passos
-Você pode conferir todas as receitas ao criar o **Livro da Cervejaria** (1 garrafa de vidro e 1 livro).
-![](../../assets/cervejaria/cervejariacraft01.png)
+O **Patbox's Brewery** permite criar bebidas alcoólicas e não alcoólicas usando caldeirões, fogueiras e barris especiais. As receitas adicionais podem ser fornecidas por datapacks, mas **o arquivo do modpack não permite confirmar se o New Empire usa receitas personalizadas**.
 
-### Cozinhando/Fervendo com Caldeirão (Preparando misturas)
-Usar o caldeirão é bem simples. Basta jogar os ingredientes no caldeirão cheio de água
-colocado sobre uma fogueira (ou campfire) e então clicar nele com um graveto. Isso irá consumir os ingredientes e começar a cozinhar/fervê-los. O tempo passado será exibido acima do caldeirão. Quando atingir o valor desejado, basta clicar com uma garrafa de vidro vazia para obter a mistura ou bebida pronta.
+## 1. Consulte o livro de receitas
 
-![](../../assets/cervejaria/cervejaria02.png)
+Fabrique o **Livro da Cervejaria** com **um livro** e **uma garrafa de vidro**. Nele você poderá consultar as receitas que o mod disponibiliza.
 
-### Criando barril
-Os barris da cervejaria são construídos no mundo. Para fazer um, siga os passos abaixo:
+![Receita do livro da cervejaria](../../assets/cervejaria/cervejariacraft01.png)
 
-1. Separe os materiais necessários (todos do mesmo tipo de madeira):
-    - 1 torneira (craftada com pedra, graveto e qualquer tipo de tábua)
-    ![](../../assets/cervejaria/cervejariacraft02.png)
-    - 4 cercas
-    - 16 escadas de madeira
-    - 20 tábuas de madeira
+## 2. Prepare misturas no caldeirão
 
-2. Posicione os itens conforme mostrado na imagem abaixo.
-    - A rotação das escadas não importa.
-    - Coloque a torneira por último.
+1. Coloque um **caldeirão com água** sobre uma fogueira.
+2. Solte dentro dele os ingredientes da receita desejada.
+3. Clique no caldeirão com um **graveto** para iniciar o preparo.
+4. Acompanhe o tempo de cozimento exibido.
+5. Use uma **garrafa de vidro vazia** para retirar a mistura ou bebida pronta no momento previsto na receita.
 
+![Caldeirão de preparo](../../assets/cervejaria/cervejaria02.png)
 
-![](../../assets/cervejaria/cervejaria03.png)
+## 3. Construa um barril de envelhecimento
 
-### Envelhecendo misturas/bebidas com Barris
-A maioria dos tipos de bebida requer envelhecimento com barris. Porém, nem todos os barris são iguais. Algumas bebidas terão qualidade superior em certos tipos de barril, outras não poderão ser feitas.
+O barril especial é **uma estrutura construída no mundo**, não o barril comum de armazenamento.
 
-Para começar a envelhecer uma mistura/bebida, basta clicar em um barril que você fez (não o vanilla!) e colocar seus itens lá. Eles começarão a envelhecer automaticamente. Quando atingirem qualidade suficiente, você pode retirá-los.
+Para a estrutura apresentada pelo autor, separe materiais de um mesmo tipo de madeira:
 
-## LINKS:
-- Modrinth: https://modrinth.com/mod/brewery
-- Github: https://github.com/Patbox/brewery/releases
+- **1 torneira** (fabricada com pedra, graveto e uma tábua);
+- **4 cercas**;
+- **16 escadas de madeira**;
+- **20 tábuas de madeira**.
 
-### Datapacks que adicionam novas bebidas que você pode querer conferir.
-- Cabbage Substances: https://modrinth.com/datapack/cabbage-substances
-- Mainstay Recipe Book: https://modrinth.com/datapack/mainstay-recipe-book
-- To the Baikal: https://modrinth.com/datapack/to-the-baikal
+![Receita da torneira](../../assets/cervejaria/cervejariacraft02.png)
+
+Posicione os materiais de acordo com a estrutura a seguir. A orientação das escadas não importa; **instale a torneira por último**.
+
+![Estrutura de barril](../../assets/cervejaria/cervejaria03.png)
+
+## 4. Envelheça a bebida
+
+Clique no barril construído e guarde as misturas nele. Algumas bebidas precisam de envelhecimento; o tipo de madeira e o tempo podem influenciar sua qualidade. Retire os itens quando a receita atingir o resultado desejado.
+
+## Receitas extras
+
+O projeto aceita datapacks de bebidas, mas estes são **opcionais**. Exemplos de pacotes externos são [Cabbage Substances](https://modrinth.com/datapack/cabbage-substances), [Mainstay Recipe Book](https://modrinth.com/datapack/mainstay-recipe-book) e [To the Baikal](https://modrinth.com/datapack/to-the-baikal). **Não são apresentados aqui como instalados no servidor.**
+
+**Links:** [Modrinth](https://modrinth.com/project/nr7cSJlY) · [GitHub](https://github.com/Patbox/brewery) · [Catálogo](/docs/explicacao-mods/catalogo).
