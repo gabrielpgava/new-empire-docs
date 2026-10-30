@@ -1,8 +1,8 @@
 {
-  "label": "Basico",
+  "label": "Primeiros passos",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Aqui será explicado o essencial do servidor, como regras e damais informações."
+    "description": "Instalação, comandos e orientações essenciais para começar a jogar no New Empire."
   }
 }

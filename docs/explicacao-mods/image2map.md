@@ -1,30 +1,51 @@
-# Image2Map
+---
+sidebar_position: 7
+title: Image2Map
+description: Criar mapas a partir de imagens com Image2Map 0.15.0.
+---
 
-Um mod que permite renderizar uma imagem em um mapa(s).
+# 🖼️ Image2Map
 
-![Algumas imagens](../../assets/image2map/image2map01.png)
-![Mais imagens](../../assets/image2map/image2map02.png)
+**Versão selecionada no modpack:** `image2map-0.15.0+26.3.jar`.
 
-## Comandos:
-- `/image2map create <LARGURA> <ALTURA> <[dither/none]> <URL>` - Cria um mapa do tamanho especificado (em pixels, um mapa único é 128x128), com ou sem dithering, usando a imagem fornecida
-- `/image2map create <[dither/none]> <URL>` - Cria um mapa com ou sem dithering usando a imagem fornecida
-- `/image2map preview <URL>` - Cria uma prévia dinâmica antes de salvar o mapa como item
+O **Image2Map** transforma imagens em um ou vários mapas do Minecraft, permitindo criar quadros, cartazes e painéis decorativos dentro do jogo.
 
-### Comandos no modo de prévia
-- `/dither <[dither/none]>` - Altera o modo de dithering
-- `/size` - Exibe o tamanho atual
-- `/size <LARGURA> <ALTURA>` - Altera o tamanho do mapa para o especificado (em pixels, um mapa único é 128x128)
-- `/grid` - Alterna a visibilidade da grade do mapa
-- `/save` - Sai da prévia e salva o mapa como itens
-- `/exit` - Sai da prévia sem salvar
+![Exemplos de mapas criados](../../assets/image2map/image2map01.png)
+![Mais exemplos de mapas](../../assets/image2map/image2map02.png)
 
-### O que é dithering?
+## Comandos
 
-Dithering é uma técnica que adiciona uma espécie de "ruído" controlado à imagem para suavizar transições de cores e reduzir o efeito de bandas visuais. Isso pode ajudar a representar melhor imagens com paletas de cores limitadas, como as usadas em mapas do Minecraft.
+Os comandos apresentados pelo autor são:
 
-### Multimapas
-No caso de mapas maiores que 128x128 pixels, você os receberá em um pacote. Clicar com ele no canto superior esquerdo de molduras de itens irá posicionar todos os mapas nos lugares corretos. Funciona para qualquer moldura de item na parede, chão ou teto.
+| Comando | Ação |
+| --- | --- |
+| `/image2map create <LARGURA> <ALTURA> <dither/none> <URL>` | Cria mapas na dimensão informada em pixels. |
+| `/image2map create <dither/none> <URL>` | Cria um mapa a partir de uma imagem. |
+| `/image2map preview <URL>` | Inicia um modo de pré-visualização antes de salvar. |
 
-## LINKS:
-- Modrinth: https://modrinth.com/mod/image2map
-- GitHub: https://github.com/Patbox/Image2Map
+**Exemplo de uso:** selecione uma URL de imagem que possa ser acessada pelo servidor e utilize `/image2map preview <URL>`, substituindo `<URL>` pelo endereço real.
+
+### Durante a pré-visualização
+
+- `/dither <dither/none>`: altera o modo de processamento de cores.
+- `/size`: consulta o tamanho atual.
+- `/size <LARGURA> <ALTURA>`: muda as dimensões, em pixels.
+- `/grid`: mostra ou oculta a grade dos mapas.
+- `/save`: confirma e salva os itens.
+- `/exit`: fecha sem salvar.
+
+## Dimensões e mapas múltiplos
+
+Cada mapa comum possui **128 × 128 pixels**. Para criar painéis maiores, o mod pode gerar um conjunto de mapas. Segundo a documentação do projeto, ao usar o pacote de mapas no **canto superior esquerdo** de um conjunto de molduras, os mapas podem ser distribuídos automaticamente.
+
+## O que é dithering?
+
+É uma técnica de distribuição de pixels para simular gradientes e reduzir faixas abruptas de cor. Em mapas, pode representar melhor algumas imagens com a paleta limitada do Minecraft. Compare os modos `dither` e `none` na prévia antes de salvar.
+
+## Segurança e permissões
+
+O Image2Map obtém imagens por URL. Evite links privados, arquivos com dados pessoais ou recursos externos não confiáveis. A administração deve revisar **permissões, limites de uso e política de URLs** antes de liberar o recurso publicamente.
+
+Os comandos acima representam as funções documentadas pelo autor, **não uma garantia de acesso** para cada jogador do New Empire.
+
+**Links:** [Modrinth](https://modrinth.com/project/13RpG7dA) · [GitHub](https://github.com/Patbox/Image2Map) · [Catálogo](/docs/explicacao-mods/catalogo).
